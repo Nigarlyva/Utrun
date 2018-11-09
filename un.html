@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<title>UTRUN</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+<style>
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Times New Roman", Times, serif;
+}
+.container{
+	max-width: 1140px;
+	margin-left: auto;
+	margin-right: auto;
+}
+header{
+	background-image: url(images/normal/home-bg.jpg);
+	background-position: center;
+	background-size: cover;
+}
+.navbar{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 0;
+}
+.navbar li{
+	display: inline-block;
+	padding: 0 12px;
+}
+.navbar a{
+	color: #666666;
+	text-decoration: none;
+	font-weight: 550;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+.navbar a:hover{
+	color: #4777f4 !important;
+}
+#download{
+	background-color: #4777f4;
+	color: white;
+	padding: 15px 30px;
+	border-radius: 5px;
+}
+#download a:hover{
+	color: #0109FC;
+}
+.header-info{
+	margin-top: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.box h1{
+	font-size: 45px;
+}
+.box p{
+	font-size: 17px;
+	color: #9595A2;
+}
+.email input{
+	height: 55px;
+	width: 300px;
+	text-indent: 30px;
+	border-radius: 5px;
+	border: 1px solid #CACACA;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+.email input::placeholder
+{
+	font-size: 20px;
+	color: #9595A2;
+}
+.box span{
+	font-size: 14px;
+	color: #9595A2;
+}
+.email a{
+	background-color: #4777f4;
+	border-radius: 5px;
+	text-decoration: none;
+	color: white;
+	padding: 18px;
+	font-size: 19px;
+	position: absolute;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+.email a:hover{
+  color: blue;
+}
+.logos{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.logos img{
+	width: 16.6666%;
+}
+section{
+	width: 100%;
+	height: 574px;
+	background-image: url(images/normal/bg-circle.jpg);
+	background-size: cover;
+	background-position: center;
+	margin-top: 150px;
+	position: relative;
+}
+.grow-business{
+	width: 1140px;
+	height: 574px;
+	background-color: white;
+	position: absolute;
+	top: -130px;
+	left: calc(50% - 570px);
+	z-index: 1;
+	box-shadow: 0 0px 57px rgba(71, 119, 244, 0.09); 
+	border-radius: 6px;
+	
+}
+.grow-business h1{
+	font-size: 40px;
+	text-align: center;
+	margin-top: 70px;
+	font-weight: 600;
+	color: #333336;
+}
+.box1{
+	margin-top: 45px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.grow-business p{
+	margin-top: 14px;
+	font-size: 18px;
+	color: #9595A2;
+	padding-left: 95px;
+	padding-right: 90px;
+}
+.icon{
+	border: 5px solid #D0D4FF;
+	border-radius: 50%;
+	background-color: white;
+	width: 50px;
+	height: 50px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: relative;
+}
+.icon::before{
+	content: "";
+	border: 6px solid #4777F4;
+	background-color: #4777F4;
+	margin: 0 auto;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	position: absolute;
+	top: 1px;
+	z-index: -3;
+}
+.text-box{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.box2{
+	margin-top: -20px;
+}
+.box2 h1{
+	font-size: 24px;
+
+}
+.box2 p{
+	font-size: 17px;
+}
+.container{
+	width: 100%;
+	height: 550px;
+}
+.text-box1{
+	margin-top: 80px;
+	margin-left: 40px;
+	display: flex;
+	justify-content: space-between;
+align-items: center;
+}
+.box3{
+	padding: 80px;
+}
+.box3 h1{
+	font-size: 37px;
+	color:#333336;
+}
+.box3 p{
+	font-size: 18px;
+	color: #9595A2;
+}
+.box3 span{
+	margin-top: 15px;
+	display: inline-block;
+	border: 1px solid #4777f4;
+	background-color: #B5EDF7;
+    height: 50px;
+    text-align: center;
+    text-indent: 5px;
+    width: 320px;
+    border-radius: 5px;
+}
+.main{
+	width: 100%;
+	height: 550px;
+}
+.text-box2{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 120px;
+}
+.box4 span{
+	margin-top: 15px;
+	display: inline-block;
+	border: 1px solid #44E724;
+	background-color: #C1F5D8;
+    height: 50px;
+    text-align: center;
+    text-indent: 5px;
+    width: 320px;
+    border-radius: 5px;
+}
+.box4{
+	padding: 80px;
+}
+.box4 h1{
+	font-size: 37px;
+	color:#333336;
+}
+.box4 p{
+	font-size: 18px;
+	color: #9595A2;
+}
+.main1{
+	width: 100%;
+	height: 550px;
+}
+.main1 h1{
+	text-align: center;
+	font-size: 40px;
+	color:#333336;
+}
+.main1 p{
+	margin-top: 20px;
+	margin-left: 140px;
+	margin-right: 140px;
+	font-size: 18px;
+	color: #9595A2;
+}
+.b{
+	margin-top: 50px;
+    display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: relative;
+}
+.icons{
+	border: 2px solid #D0D4FF;
+	border-radius: 50%;
+	background-color: white;
+	width: 40px;
+	height: 40px;
+	padding: 9px;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+}
+.line{
+ position: absolute;
+margin-left: 150px;
+margin-top: -35px;
+z-index: -1;
+}
+.text-box3{
+	margin-left: 100px;
+	margin-top: 70px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.box5 h1{
+	font-size: 40px;
+	color:#333336;
+}
+.box5 p{
+	font-size: 18px;
+	color: #9595A2;
+}
+.main2{
+	width: 100%;
+	height: 700px;
+}
+.main2 h1{
+	text-align: center;
+	font-size: 40px;
+	color:#333336;
+}
+.main2 p{
+	font-size: 18px;
+	color: #9595A2;
+	margin-left: 90px;
+	margin-right: 90px;
+}
+.boxes{
+	width: 100%;
+	height: 450px;
+
+}
+.first{
+    margin-top: 100px;
+	width: 32.333%;
+    height: 470px;
+	border: 1px solid blue;
+}
+.first h1{
+	font-size: 30px;
+	color:#333336;
+	
+}
+.first h2{
+	font-size: 24px;
+	color:#333336;
+	text-align: center;
+}
+.ic{
+	margin-left: 170px;
+	color: blue;
+	font-size: 30px;
+
+}
+.first p{
+	color: #9595A2;
+	text-align: center;
+}
+#purchase{
+	display: inline-block;
+    text-decoration: none;
+	border: 1px solid blue;
+	font-size: 20px;
+	margin-left: 120px;
+	padding: 15px 20px;
+	margin-top: 10px;
+}
+#purchase a:hover{
+color: blue;
+}
+.second{
+	margin-left: 400px;
+    margin-top: -500px;
+	width: 32.333%;
+    height: 480px;
+	border: 1px solid blue;
+}
+.second h1{
+	font-size: 30px;
+	color:#333336;
+}
+.second h2{
+	font-size: 24px;
+	color:#333336;
+	text-align: center;
+}
+.ic1{
+	margin-left: 170px;
+	color: blue;
+	font-size: 30px;
+}
+.second p{
+	color: #9595A2;
+	text-align: center;
+}
+.third{
+	margin-left: 800px;
+    margin-top: -450px;
+	width: 32.333%;
+    height: 470px;
+	border: 1px solid blue;
+}
+.third h1{
+	font-size: 30px;
+	color:#333336;
+}
+.third h2{
+	font-size: 24px;
+	color:#333336;
+	text-align: center;
+}
+.third p{
+	color: #9595A2;
+	text-align: center;
+}
+.main3{
+	width: 100%;
+	height: 600px;
+}
+.text-box4{
+	width: 100%;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+}
+.box6 h1{
+font-size: 37px;
+	color:#333336;
+	margin-bottom: 20px
+}
+.box6 p{
+	font-size: 18px;
+	color: #9595A2;
+}
+#pic{
+	padding: 20px 40px;
+}
+.box6 span{
+	font-size: 18px;
+	color: #333336;
+}
+.box6 h2{
+	font-size: 25px;
+}
+.box6 h3{
+	font-size: 25px;
+}
+.icc{
+	width: 150px;
+	height: 30px;
+}
+.down{
+	color: #80C3DC;
+	font-size: 30px;
+}
+.globe{
+	color: #80C3DC;
+	font-size: 30px;
+}
+.main4{
+	width: 100%;
+	height: 600px;
+}
+.main4 h1{
+    padding: 20px;
+	text-align: center;
+	font-size: 40px;
+	color:#333336;
+}
+.main4 p{
+	font-size: 18px;
+	color: #9595A2;
+	margin-left: 90px;
+	margin-right: 90px;
+}
+.client1{
+	margin-top: 70px;
+	width: 32.333%;
+	height: 350px;
+	border: 1px solid #E6EFF3;
+	background-color: #E6EFF3;
+}
+.client1 h1{
+	font-size: 18px;
+	margin-top: 10px;
+}
+.client1 h2{
+	font-size: 14px;
+	text-align: center;
+	margin-top: 10px;
+}
+.client1 p{
+	font-size: 17px;
+	margin-top: 10px;
+}
+#client1{
+	margin-left: 140px;
+	margin-top: -40px;
+}
+.client2{
+	margin-top: -352px;
+	margin-left: 400px;
+	width: 32.333%;
+	height: 350px;
+	border: 1px solid #E6EFF3;
+	background-color: #E6EFF3;
+}
+.client2 h1{
+	font-size: 18px;
+	margin-top: 10px;
+}
+.client2 h2{
+	margin-top: 10px;
+	font-size: 14px;
+	text-align: center;
+}
+.client2 p{
+	margin-top: 10px;
+	font-size: 17px;
+}
+#client2{
+	margin-left: 140px;
+	margin-top: -40px;
+}
+.client3{
+	margin-top: -352px;
+	margin-left: 800px;
+	width: 32.333%;
+	height: 350px;
+	border: 1px solid #E6EFF3;
+	background-color: #E6EFF3;
+}
+.client3 h1{
+	margin-top: 10px;
+	font-size: 18px;
+}
+.client3 h2{
+	margin-top: 10px;
+	font-size: 14px;
+	text-align: center;
+}
+.client3 p{
+	margin-top: 10px;
+	font-size: 17px;
+}
+#client3{
+	margin-left: 140px;
+	margin-top: -40px;
+}
+#ics{
+	margin-left: 170px;
+}
+.main5{
+	width: 100%;
+	height: 600px;
+}
+.main5 h1{
+	margin-top: 50px;
+    padding: 20px;
+	text-align: center;
+	font-size: 40px;
+	color:#333336;
+}
+.main5 p{
+	margin-left: 90px;
+	margin-right: 90px;
+	color: #757B7E
+}
+.news1{
+	margin-top: 70px;
+	width: 32.333%;
+	height: 350px;
+	border: 1px solid #E6EFF3;
+	background-color: #E6EFF3;
+	box-shadow: 2px 2px 40px rgba(71, 119, 244, 0.09); 
+}
+.news1 h1{
+	font-size: 20px;
+	text-indent: -50px;
+}
+.news1 p{
+	color: #757B7E;
+	margin-bottom: 15px;
+margin-left: 2px;
+}
+#rm{
+	text-decoration: none;
+	text-indent: 20px;
+	color: black;
+}
+.news2{
+	margin-left: 400px;
+	margin-top: -350px;
+	width: 32.333%;
+	height: 350px;
+	border: 1px solid #E6EFF3;
+	background-color: #E6EFF3;
+	box-shadow: 2px 2px 40px rgba(71, 119, 244, 0.09); 
+}
+.news2 h1{
+	font-size: 20px;
+	text-indent: -50px;
+}
+.news2 p{
+	color: #757B7E;
+	margin-bottom: 15px;
+	margin-left: 2px;
+}
+.news3{
+	margin-left: 800px;
+	margin-top: -350px;
+	width: 32.333%;
+	height: 350px;
+	border: 1px solid #E6EFF3;
+	background-color: #E6EFF3;
+	box-shadow: 2px 2px 40px rgba(71, 119, 244, 0.09); 
+}
+.news3 h1{
+	font-size: 20px;
+	text-indent: -50px;
+}
+.news3 p{
+	color: #757B7E;
+	margin-bottom: 15px;
+	margin-left: 2px;
+}
+.container2{
+	max-width: 1140px;
+	margin-left: auto;
+	margin-right: auto;
+}
+footer{
+	background-image: url(images/normal/footer-bg.jpg);
+	background-size: cover;
+	width: 100%;
+	height: 500px;
+	background-position: center;
+	margin-top: 100px;
+}
+.text-box2{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 120px;
+}
+.box7{
+	width: 32.333%;
+}
+.box7 img{
+	margin-top: 120px;
+}
+.box7 p{
+	color: #757B7E;
+	font-size: 19px;
+    margin-bottom: 20px;
+}
+.icn{
+	padding: 10px;
+	border: 1px solid blue;
+}
+</style>
+</head>
+<body>
+<header>
+	 <div class="container">
+	 	<div class="navbar">
+	 		<a href="#"><img src="images/normal/lg.png" alt="logo"></a>
+	 		<ul>
+	 			<li><a href="#">Home</a></li>
+	            <li><a href="#">Features</a></li>
+	            <li><a href="#">Pricing</a></li>
+	            <li><a href="#">Review</a></li>
+	            <li><a href="#">Blog</a></li>
+	            <li><a href="#">Contact</a></li>
+	            <li><a href="#" id="download">Download</a></li>
+	        </ul>
+	  	</div>
+	  	<div class="header-info">
+	  		<div class="box">
+	  			<h1>CREATE YOUR APP PAGE<br/>
+	  				WITH <font color="#4777f4">UTRUN</font></h1>
+	  			<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                <div class="email">
+                	<input type="email" name="email" placeholder="Enter your email">
+                	<a href="#">FREE TRIAL<i class="fas fa-arrow-right"></i></a>
+                </div>
+                <span>*No Credit Card Required. Free for 14 Days!</span>
+            </div>
+            <img src="images/normal/person.png" alt="person" width="500px" height="auto">
+	  	</div>
+	  	<div class="logos">
+	  		<img src="images/client-logo/1.png">
+	  		<img src="images/client-logo/2.png">
+	  		<img src="images/client-logo/3.png">
+	  		<img src="images/client-logo/4.png">
+	  		<img src="images/client-logo/5.png">
+	  		<img src="images/client-logo/6.png">
+        </div>
+	 </div>
+</header>
+<section>
+	<div class="grow-business">
+		<h1>A Place to Grow Your Business</h1>
+		<p>Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales
+sagittis magna. Sed consequat, leo eget bibendum sodales, augue .</p>
+      <div class="box1">
+			<div class="icon">
+				<img src="images/image-icon/b-1.png" alt="icon">
+			</div>
+			<div class="icon">
+				<img src="images/image-icon/b-1.png" alt="icon">
+		    </div>
+		    <div class="icon">
+				<img src="images/image-icon/b-1.png" alt="icon">
+		    </div>
+      </div>
+      <div class="text-box">
+	      	<div class="box2">
+	      		<h1>Product Marketing</h1>
+					<p>Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan.</p>
+		    </div>
+		    <div class="box2">
+	      		<h1>Business Analysis</h1>
+					<p>Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan.</p>
+		    </div>
+		    <div class="box2">
+	      		<h1>Revenue</h1>
+					<p>Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan.</p>
+		    </div>
+      </div>
+</section>
+<div class="container">
+ <div class="text-box1">
+ 	<img src="images/normal/f.jpg">
+ 	<div class="box3">
+ 		<h1>User Friendly Interface, <br/>Very Easy To Use</h1>
+ 		<p>Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue . Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue .</p>
+ 		<span><font color="#4777f4"><i class="fas fa-check"></i>Best UI and Awesome User Experience</font></span>
+ 	</div>
+</div>
+<div class="main">
+	<div class="text-box2">
+		<div class="box4">
+	 		<h1>Attrack Only Quality <br/>With this apps</h1>
+	 		<p>Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue . Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue .</p>
+	 		<span><font color="#44E724"><i class="fas fa-check"></i>Best UI and Awesome User Experience</font></span>
+	 	</div>
+	 	<img src="images/normal/f.jpg">
+	</div>
+</div>
+<div class="main1">
+    <h1>Amazing Features</h1>
+    <p>Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales
+sagittis magna. Sed consequat, leo eget bibendum sodales, augue .</p>
+   <div class="b">
+	    <div class="icons">
+	     <a href="#"><img src="images/image-icon/b-3.png"></a>
+	    </div>
+	    <div class="icons">
+	     <a href="#"><img src="images/image-icon/b-3.png"></a>
+	    </div>
+	    <div class="icons">
+	     <a href="3"><img src="images/image-icon/b-3.png"></a>
+	    </div>
+	    <div class="icons">
+	     <a href="#"><img src="images/image-icon/b-3.png"></a>
+	    </div>
+   </div>
+   <img src="images/normal/line-bg.png" class="line" width="840px">
+   <div class="text-box3">
+   	<img src="images/normal/person.png" width="200px" height="auto">
+   	<div class="box5">
+   		<h1>Best User Experience</h1>
+   		<p>Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue .</p>
+   	</div>
+   </div>
+</div>
+<div class="main2">
+	<h1>Pricing Plan</h1>
+    <p>Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales 
+sagittis magna. Sed consequat, leo eget bibendum sodales, augue .</p>
+   <div class="boxes">
+	    <div class="first">
+	    	<img src="images/normal/table-curve1.png" class="im" width="368" height="100px">
+	    	<h1>$0.00</h1>
+	    	<h2>Free</h2><br/><br/>
+	        <a href="#" class="ic"><i class="far fa-building"></i></a><br/>
+	        <p>1 Page UI Design</p>
+	        <p>5 Screen App Design</p>
+	        <p>Web App Design</p>
+	        <p>Responsive Design</p>
+	        <p>Web Development</p>
+	        <a href="#" id="purchase">Purchase<i class="fas fa-arrow-right"></i></a>
+	    </div>
+	    <div class="second">
+	    	<img src="images/normal/table-curve2.png" class="i" width="370" height="100px">
+	    	<h1>$48.99</h1>
+	    	<h2>Standard</h2>
+	    	<a href="#" class="ic1"><i class="far fa-building"></i></a><br/>
+	    	<p>1 Page UI Design</p>
+	        <p>5 Screen App Design</p>
+	        <p>Web App Design</p>
+	        <p>Responsive Design</p>
+	        <p>Web Development</p>
+	        <a href="#" id="purchase">Purchase<i class="fas fa-arrow-right"></i></a>
+	    </div>
+	    <div class="third">
+	    	<img src="images/normal/table-curve1.png" class="i" width="368px" height="100px">
+	    	<h1>$60.99</h1>
+	    	<h2>Premium</h2>
+	    	<a href="#" class="ic1"><i class="far fa-building"></i></a><br/>
+	    	<p>1 Page UI Design</p>
+	        <p>5 Screen App Design</p>
+	        <p>Web App Design</p>
+	        <p>Responsive Design</p>
+	        <p>Web Development</p>
+	        <a href="#" id="purchase">Purchase<i class="fas fa-arrow-right"></i></a>
+	    </div>
+  </div>
+</div>
+<div class="main3">
+	<div class="text-box4">
+		<div class="box6">
+			<h1>World Wide User</h1>
+			<p>Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue . Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh.</p><br/>
+			<div class="icc">
+				<a href="#" class="down"><i class="fas fa-download" ></i></a><br/>
+				<span>Downloaded</span><br/>
+				<h2>5M+</h2>
+				<a href="#" class="globe"><i class="fas fa-globe"></i></a>
+				<h3>8M+</h3>
+		    </div>
+        </div>
+        <img src="images/normal/wide-img.png" id="pic">
+     </div>
+</div>
+<div class="main4">
+	<h1>What Say's Our Clients</h1>
+    <p>Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales
+	sagittis magna. Sed consequat, leo eget bibendum sodales, augue .</p> 
+	<div class="client1">
+	  <img src="images/testimonial/1.png" id="client1">
+      <h1>Mst Raisa</h1>
+      <h2>Envato author</h2>
+      <a href="#" id="ics"><i class="fas fa-download" ></i></a>
+      <p>Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales
+	sagittis magna. Sed consequat, leo eget bibendum sodales, augue .</p> 
+	</div>
+	<div class="client2">
+	  <img src="images/testimonial/2.png" id="client2">
+      <h1>Mst Raisa</h1>
+      <h2>Envato author</h2>
+      <a href="#" id="ics"><i class="fas fa-download" ></i></a>
+      <p>Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales
+	sagittis magna. Sed consequat, leo eget bibendum sodales, augue .</p> 
+	</div>
+	<div class="client3">
+	  <img src="images/testimonial/3.png" id="client3">
+      <h1>Mst Raisa</h1>
+      <h2>Envato author</h2>
+      <a href="#" id="ics"><i class="fas fa-download" ></i></a>
+      <p>Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales
+	sagittis magna. Sed consequat, leo eget bibendum sodales, augue .</p> 
+	</div>
+</div>
+<div class="main5">
+	<h1>Latest News</h1>
+	<p>Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales
+sagittis magna. Sed consequat, leo eget bibendum sodales, augue .</p>
+   <div class="news1">
+   	<h1>UX means problem sloving, like...</h1>
+   	<p><i class="fas fa-user-alt" class="prsn"></i>Mark Parker   <i class="fas fa-gift" class="gift"></i>Dec 25, 2018</p>
+   	<img src="images/latest-blog/1.jpg" width="370px" height="auto"><br/>
+   	<a href="#" id="rm">Read More</a>
+   </div>
+   <div class="news2">
+   	<h1>UX means problem sloving, like...</h1>
+   	<p><i class="fas fa-user-alt" class="prsn"></i>Mark Parker   <i class="fas fa-gift" class="gift"></i>Dec 25, 2018</p>
+   	<img src="images/latest-blog/1.jpg" width="370px" height="auto"><br/>
+   	<a href="#" id="rm">Read More</a>
+   </div>
+   <div class="news3">
+   	<h1>UX means problem sloving, like...</h1>
+   	<p><i class="fas fa-user-alt" class="prsn"></i>Mark Parker   <i class="fas fa-gift" class="gift"></i>Dec 25, 2018</p>
+   	<img src="images/latest-blog/1.jpg" width="370px" height="auto"><br/>
+   	<a href="#" id="rm">Read More</a>
+   </div>
+</div>
+<footer>
+	<div class="container2">
+		<div class="text-box5">
+		   <div class="box7">
+		        <img src="images/normal/lg.png">
+		        <p>Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibos faucibus tincidunt. Duis leo. Sed fringilla mauris.</p>
+		        <a href="#" class="icn"><i class="fab fa-facebook-f"></i></a>
+		        <a href="#" class="icn"><i class="fab fa-twitter"></i></a>
+		        <a href="#" class="icn"><i class="fab fa-pinterest"></i></a>
+		        <a href="#" class="icn"><i class="fab fa-vimeo-v"></i></a>
+	       </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
